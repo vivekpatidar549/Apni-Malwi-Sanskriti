@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../form.css'
+
 export default function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -77,35 +78,40 @@ export default function Contact() {
   }
 
   return (
-    <div className=' relative max-w-6xl mx-auto border border-teal-500'>
-      <p className='absolute text-[40px] text-teal-500 font-bold'>Contact Us</p>
-      <div className="formcarry-container ">
-      
-      <form onSubmit={(e) => onSubmit(e)}>
-      
-        <div className="formcarry-block">
-          <label htmlFor="name">Full Name</label>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} id="name" placeholder="Your first and last name" />
-        </div>
+    <div className='  max-w-6xl mx-auto border border-teal-600 mb-2'>
+      <p className='text-center text-[40px] text-teal-500 font-bold mt-2'>Contact Us</p>
+      <div className='flex flex-col mx-auto justify-around gap-4 sm:flex-row '>
+        <div className=" w-auto sm:w-[400px]">
         
-        <div className="formcarry-block">
-          <label htmlFor="email">Your Email Address</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} id="email" placeholder="john@doe.com" />
-        </div>
-        
-        <div className="formcarry-block">
-          <label htmlFor="message">Your message</label>
-          <textarea value={message} onChange={(e) => setMessage(e.target.value)} id="message" placeholder="Enter your message..."></textarea>
-        </div>
-        
-        <div className="formcarry-block mb-5">  
-          <button type="submit">Send</button>
-        </div>
+          <form className='flex flex-col gap-4' onSubmit={(e) => onSubmit(e)}>
+          
+            <div className="flex flex-col gap-3 ">
+              <label  htmlFor="name">Full Name</label>
+              <input className='max-w-[450px] rounded-md border-teal-500 border-y-2 text-black hover:bg-gray-200 transition' type="text" value={name} onChange={(e) => setName(e.target.value)} id="name" placeholder="Your first and last name" />
+            </div>
+            
+            <div className="flex flex-col gap-3">
+              <label htmlFor="email">Your Email Address</label>
+              <input className='max-w-[450px] rounded-md border-teal-500 border-y-2 text-black hover:bg-gray-200 transition' type="email" value={email} onChange={(e) => setEmail(e.target.value)} id="email" placeholder="john@doe.com" />
+            </div>
+            
+            <div className="flex flex-col gap-3">
+              <label htmlFor="message">Your message</label>
+              <textarea className='max-w-[450px] h-[185px] rounded-md border-teal-500 border-y-2 text-black hover:bg-gray-200 transition ' value={message} onChange={(e) => setMessage(e.target.value)} id="message" placeholder="Enter your message..."></textarea>
+            </div>
+            
+            <button className='text-white max-w-[450px] text-center bg-[#0154E5] p-2 rounded-md mb-5  hover:bg-teal-600 transition' type="submit">Send</button>
 
-        {showNotification && renderStatus()}
-      
-      </form>
-    </div>
+
+            {showNotification && renderStatus()}
+          
+          </form>
+        </div>
+        <div className='flex flex-col items-center justify-center gap-4 '>
+          <img className='w-[300px]' src='https://res.cloudinary.com/dwrbxnw11/image/upload/v1709408539/undraw_profile_data_re_v81r_ylfpum.svg'></img>
+          <a className='text-[#0694A2]' href='mailto:help.apna.malwa@gmail.com'>help.apna.malwa@gmail.com</a>
+        </div>
+      </div>
     </div>
   )
 }
