@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
+import Contact from '../components/Contact';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -106,7 +107,7 @@ export default function Home() {
   return (
     <div>
       <div className='flex flex-col gap-6 p-10 px-3 max-w-6xl mx-auto h-[160px] '>
-        <h1 className='text-3xl font-bold lg:text-6xl'>Welcome to Malwa</h1>
+        <h1 className='text-3xl font-bold lg:text-6xl'>Welcome to <span className='text-[#0694A2]'>Malwa</span></h1>
         <p className='text-gray-500 text-xs sm:text-sm'>
         Step into the lively world of Malwa, where Gujarati, Rajasthani, and Marathi influences blend seamlessly. From the enchanting beats of Lavani (folk music) to the mouthwatering aromas of traditional cuisine, immerse yourself in a colorful journey of flavor and rhythm.
         </p>
@@ -159,6 +160,8 @@ export default function Home() {
           </div>
         )}
       </div>
+
+      <Contact></Contact>
     </div>
   );
 }

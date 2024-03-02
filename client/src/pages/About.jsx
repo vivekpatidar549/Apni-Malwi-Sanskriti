@@ -1,8 +1,8 @@
 import {useSelector} from 'react-redux'
+
 export default function About() {
-  const { theme } = useSelector((state) => state.theme);
   return (
-    <div className='min-h-screen flex items-center justify-center'>
+    <div className='min-h-screen flex items-center justify-center flex-col'>
       <div className='max-w-4xl mx-auto p-3 text-center text-justify'>
         <div>
           <h1 className='text-2xl font font-bold text-center my-7 '>
@@ -28,6 +28,7 @@ export default function About() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }
