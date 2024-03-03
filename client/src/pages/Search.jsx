@@ -74,10 +74,18 @@ export default function Search() {
     const urlParams = new URLSearchParams(location.search);
     urlParams.set('searchTerm', sidebarData.searchTerm);
     urlParams.set('sort', sidebarData.sort);
-    urlParams.set('category', sidebarData.category);
+    
+    // Check if category is "uncategorized", and handle accordingly
+    if (sidebarData.category === 'uncategorized') {
+      urlParams.delete('category'); // Remove category parameter from URL
+    } else {
+      urlParams.set('category', sidebarData.category);
+    }
+  
     const searchQuery = urlParams.toString();
     navigate(`/search?${searchQuery}`);
   };
+  
 
   const handleShowMore = async () => {
     const numberOfPosts = posts.length;
