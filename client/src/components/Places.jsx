@@ -12,7 +12,7 @@ const cardData = [
       'Bada Ganapati Temple',
       'Maheshwar'
     ],
-    imageUrl: 'https://res.cloudinary.com/dwrbxnw11/image/upload/v1709479730/ind_nyrlp0.jpg'
+    imageUrl: 'https://res.cloudinary.com/dwrbxnw11/image/upload/v1709484855/Screenshot_2024-03-03_at_10.23.59_PM_wdqvot.png'
   },
 
   {
@@ -60,11 +60,11 @@ export default function Places() {
             <img
               src={card.imageUrl}
               alt={card.title}
-              className="w-full h-[200px]"
+              className="w-full h-[200px] object-cover"
             />
             {hoveredCard === card.id && ( 
-              <CardContent className='-my-2'>
-                <Typography  variant="h5" component="div">
+              <CardContent className='-m-4'>
+                <Typography  variant="h8">
                   {card.title}
                 </Typography>
                 <ul>
