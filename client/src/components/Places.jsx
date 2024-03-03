@@ -12,7 +12,7 @@ const cardData = [
       'Bada Ganapati Temple',
       'Maheshwar'
     ],
-    imageUrl: 'https://res.cloudinary.com/dwrbxnw11/image/upload/v1709033421/HDStockImages.com-egT6ht_lrvdye.png'
+    imageUrl: 'https://res.cloudinary.com/dwrbxnw11/image/upload/v1709479730/ind_nyrlp0.jpg'
   },
 
   {
