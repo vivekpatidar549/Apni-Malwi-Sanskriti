@@ -28,11 +28,11 @@ Contributions to *Apni Malwi Sanskriti* are welcome and encouraged! Here's how y
 
 ## Get Started
 
-Ready to explore and contribute to *Apni Malwi Sanskriti*? Visit our [GitHub repository](link-to-repo) to get started!
+Ready to explore and contribute to *Apni Malwi Sanskriti*? Visit our GitHub repository to get started!
 
 ## Contact Us
 
-Have questions, suggestions, or feedback? Feel free to reach out to us at [contact@example.com](mailto:contact@example.com). We'd love to hear from you!
+Have questions, suggestions, or feedback? Feel free to reach out. We'd love to hear from you!
 
 Let's join hands to preserve and celebrate our cultural heritage with *Apni Malwi Sanskriti*! 🌍🎉
 
