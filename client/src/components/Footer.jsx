@@ -23,18 +23,18 @@ export default function FooterCom() {
               <Footer.Title title='About' />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href='#'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  ##
-                </Footer.Link>
-                <Footer.Link
                   href='/about'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  ##
+                  About Us
+                </Footer.Link>
+                <Footer.Link
+                  href='https://en.wikipedia.org/wiki/Malwa'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Learn More
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
@@ -76,6 +76,12 @@ export default function FooterCom() {
 
           </div>
         </div>
+        <p className='text-center'>
+  Made with ❤️ by  
+  <a href="https://www.linkedin.com/in/vivekpatidar549" target="_blank" rel="noopener noreferrer"> Vivek</a>
+</p>
+
+
       </div>
     </Footer>
   );
