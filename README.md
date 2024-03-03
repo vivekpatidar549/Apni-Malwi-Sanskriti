@@ -2,6 +2,8 @@
 
 https://apni-malwi-sanskriti-g79u.onrender.com/
 
+<img width="1470" alt="Screenshot 2023-12-02 at 1 18 19 PM" src="https://res.cloudinary.com/dwrbxnw11/image/upload/v1709479749/Screenshot_2024-03-03_at_8.48.03_PM_f0vf10.png">
+
 
 
 In an era of rapid modernization, it's easy to lose touch with our cultural roots. *Apni Malwi Sanskriti* is a platform dedicated to preserving and celebrating cultural heritage. The project aims to bridge the gap between generations, ensuring that traditions, festivals, and cuisines remain an integral part of our lives.
