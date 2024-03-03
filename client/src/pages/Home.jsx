@@ -149,7 +149,7 @@ export default function Home() {
     </div>
 
 
-    <div className='max-w-6xl mx-auto mb-12'>
+    <div className='max-w-6xl mx-auto -mb-12'>
     <h2 className=' px-3 text-2xl font-bold text-teal-500 '>Discover Malwa's Cuisine</h2>
       <Cuisines/>
     </div>
