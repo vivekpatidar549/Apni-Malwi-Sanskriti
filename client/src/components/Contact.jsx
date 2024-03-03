@@ -78,10 +78,10 @@ export default function Contact() {
   }
 
   return (
-    <div className='  max-w-6xl mx-auto border border-teal-600 mb-2'>
+    <div className='  max-w-6xl mx-auto  mb-7 p-3 sm:border sm:border-teal-600 '>
       <p className='text-center text-[40px] text-teal-500 font-bold mt-2'>Contact Us</p>
-      <div className='flex flex-col mx-auto justify-around gap-4 sm:flex-row '>
-        <div className=" w-auto sm:w-[400px]">
+      <div className='flex flex-col mx-auto items-center justify-center sm:justify-around gap-4 sm:flex-row w-auto '>
+        <div className=" w-[300px]  sm:w-[400px] ">
         
           <form className='flex flex-col gap-4' onSubmit={(e) => onSubmit(e)}>
           

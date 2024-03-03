@@ -16,6 +16,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
+import UpcomingEvents from './pages/UpcomingEvents.jsx';
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route path='/search' element={<Search />} />
         <Route path='/Privacy' element={<PrivacyPolicy/>}></Route>
         <Route path='/terms' element={<TermsAndConditions/>}/>
+        <Route path='/events' element={<UpcomingEvents/>}/>
         <Route element={<PrivateRoute />}>
           <Route path='/dashboard' element={<Dashboard />} />
         </Route>
