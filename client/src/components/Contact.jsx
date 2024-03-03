@@ -107,7 +107,7 @@ export default function Contact() {
           
           </form>
         </div>
-        <div className='flex flex-col items-center justify-center gap-4 '>
+        <div className='flex flex-col items-center justify-center gap-4 hidden sm:inline '>
           <img className='w-[300px]' src='https://res.cloudinary.com/dwrbxnw11/image/upload/v1709408539/undraw_profile_data_re_v81r_ylfpum.svg'></img>
           <a className='text-[#0694A2]' href='mailto:help.apna.malwa@gmail.com'>help.apna.malwa@gmail.com</a>
         </div>

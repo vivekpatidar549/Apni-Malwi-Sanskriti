@@ -17,6 +17,7 @@ import Search from './pages/Search';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import UpcomingEvents from './pages/UpcomingEvents.jsx';
+import Recommendation from './pages/Recommendation.jsx';
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         <Route path='/Privacy' element={<PrivacyPolicy/>}></Route>
         <Route path='/terms' element={<TermsAndConditions/>}/>
         <Route path='/events' element={<UpcomingEvents/>}/>
+        <Route path='recommendation' element={<Recommendation/>}></Route>
         <Route element={<PrivateRoute />}>
           <Route path='/dashboard' element={<Dashboard />} />
         </Route>

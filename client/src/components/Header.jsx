@@ -1,5 +1,5 @@
 import { Avatar, Button, Dropdown, Navbar, TextInput } from 'flowbite-react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
@@ -47,6 +47,9 @@ export default function Header() {
     const searchQuery = urlParams.toString();
     navigate(`/search?${searchQuery}`);
   };
+  const handlesearch=()=>{
+    navigate('/search');
+  }
 
   return (
     <Navbar className='border-b-2'>
@@ -70,7 +73,7 @@ export default function Header() {
         />
       </form>
       <Button className='w-12 h-10 lg:hidden' color='gray' pill>
-        <AiOutlineSearch />
+        <AiOutlineSearch onClick={handlesearch} />
       </Button>
       <div className='flex gap-2 md:order-2'>
         <Button

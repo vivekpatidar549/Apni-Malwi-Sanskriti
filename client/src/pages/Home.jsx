@@ -5,6 +5,8 @@ import PostCard from '../components/PostCard';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 import Contact from '../components/Contact';
+import Places from '../components/Places';
+import Cuisines from '../components/Cuisines';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -133,7 +135,7 @@ export default function Home() {
     
        {/* About Malwa Region */}
        <div className='flex flex-col gap-6 p-10 px-3 max-w-6xl mx-auto text-justify'>
-          <h1 className='text-xl font-bold lg:text-2xl'>About Malwa Region</h1>
+
           <p> Step into the heart of India and discover Malwa, a region where cultures intertwine to create a weaving of traditions, flavors, and celebrations. Nestled between Gujarat, Rajasthan, and Maharashtra, Malwa's cultural identity is shaped by a rich history of interactions with neighboring regions. Influenced by its proximity to Gujarat, Rajasthan, and Maharashtra, Malwa's culture is a vibrant fusion of Gujarati, Rajasthani, and Marathi influences. The language of Malwa, Malvi, serves as a bridge between communities, while Hindi resonates in the urban centers, adding to the region's linguistic diversity.</p>
 
           <p> Music Indulge your senses in Malwa's culinary delights, where traditional dishes like baati, bafla, and mawa-bati showcase the region's culinary diversity. From the savory aroma of freshly roasted corn to the sweet indulgence of mawa-based desserts, every bite tells a story of tradition and innovation. Music and dance are integral to Malwa's cultural fabric, with soulful melodies of Lavani and lively rhythms of Swang filling the air during festive occasions. Artistic traditions like Mandana paintings adorn the walls, adding color and vibrancy to everyday life.</p>
@@ -141,11 +143,22 @@ export default function Home() {
           <p>Experience the spirit of Malwa through its vibrant festivals, where communities come together to celebrate unity and diversity. From the magnificence of the Simhastha mela to the joyous fervor of Gana-gour, each event is a proof to Malwa's rich cultural heritage. Malwa is more than just a region—it's a community of diverse traditions and customs, where every aspect of life is steeped in history and reverence. Join us on a cultural journey through the enchanting land of Malwa and discover the stories that shape its identity.</p>
     </div>
 
+    <div className=' max-w-6xl mx-auto mb-12'>
+      <h2 className=' px-3 text-2xl font-bold text-teal-500 '>Explore the Rich Heritage of Malwa</h2>
+      <Places/>
+    </div>
 
-      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
+
+    <div className='max-w-6xl mx-auto mb-12'>
+    <h2 className=' px-3 text-2xl font-bold text-teal-500 '>Discover Malwa's Cuisine</h2>
+      <Cuisines/>
+    </div>
+
+
+      <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7 mb-12'>
         {posts && posts.length > 0 && (
           <div className='flex flex-col gap-6'>
-            <h2 className='text-2xl font-semibold text-center'>Recent Posts</h2>
+            <h2 className='text-2xl font-semibold text-center text-teal-500'>Recent Community Blogs</h2>
             <div className='flex flex-wrap gap-4'>
               {posts.map((post) => (
                 <PostCard key={post._id} post={post} />
@@ -160,7 +173,7 @@ export default function Home() {
           </div>
         )}
       </div>
-
+     <p className=' max-w-6xl mx-auto p-3'>As of now, we are not allowing everyone to contribute a blog. If you want to contribute, you can contact us below.</p>
       <Contact></Contact>
     </div>
   );
